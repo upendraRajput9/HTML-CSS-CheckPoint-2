@@ -1,0 +1,393 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom */
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+/* rgb(234,81,61) */
+/* rgb(91,189,157) */
+/* rgb(229,127,48) */
+/* rgb(56,152,218) */
+/* rgb(104,205,114) */
+
+/* General */
+body{
+    font-family: 'Mulish', sans-serif;
+}
+.container{
+    max-width: 1050px;
+    margin: 0 auto;
+    width: 100%;
+}
+.flex{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bold{
+    text-transform: uppercase;
+}
+b{
+    color: rgb(234,81,61); 
+}
+.i{
+    color: rgb(56,152,218);
+}
+
+em{
+    color: rgb(104,205,114);
+}
+
+/* header */
+/* sction-1 */
+.section-1{
+    background-image: url(../media/banner.jpg);
+}
+.head-nav-1{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.head-a{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+header{ 
+    background-color: white;
+    position: fixed;
+    
+}
+
+.head-nav-2 .link{
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: gray;
+    margin-right: 30px;
+}
+hr{
+    width: 40px;
+     height: 3px;
+     background-color: rgb(234,81,61);
+     border: none;
+     margin-bottom: 30px;
+     margin-right: 40px;
+ }
+ .white{ background-color: white;}
+#color{
+    color: rgb(234,81,61);
+}
+.head-flex{
+    justify-content: start;
+}
+span{
+    font-size: 35px;
+    color: rgb(234,81,61);
+  margin-right: 200px;
+}
+   
+.article-1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 220px 0;
+    color: white;
+    
+}
+
+h2{
+    font-size: 40px;
+    padding-top: 30px;
+    text-decoration: underline;
+}
+p{
+    margin-top: 20px;
+}
+button{
+  background-color: rgb(234,81,61);
+  color: white;
+  border: none;
+  width: 130px;
+  height: 30px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.dot{
+    text-align: center;  
+}
+.light{
+    color: gray;
+}
+i{
+    margin: 5px;
+    font-size: 12px;
+}
+
+/* section-2 */
+.section-2{
+    text-align: center;
+    margin: 100px 0;
+}
+h3{
+    font-size: 30px;
+    text-decoration: underline;
+    color: rgb(68,68,68);
+}
+.box{
+    display: inline-flexbox;
+    width: 20%; 
+    height: 242px;
+   margin: 80px 0;
+   
+}
+.box1{
+    background-color: rgb(91,189,157)
+}
+.box2{
+    background-color: rgb(229,127,48);
+}
+.box3{
+    background-color: rgb(56,152,218);
+}
+.box4{
+    background-color: rgb(104,205,114);
+}
+.boxicon{
+    font-size: 40px;
+  margin: 0 auto;
+    color: white;
+}
+/* section-3 */
+.gallery-img{
+    width: 100%;
+   
+}
+.gallery{
+    width: 23%;
+    margin-bottom: 30px;
+}
+.margin{
+    margin: 80px 0;
+}
+/* section-4*/
+.team{
+    border-radius: 50%;
+}
+.cursive{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.circle{
+    margin: 60px 0;
+}
+.article-bar{
+    width: 67%;
+    text-align: start;
+    margin: 30px 0;
+}
+/* aside */
+.aside-bar{
+    width: 30%;
+    
+}
+.line{
+    text-align: start;
+    height: 25px;
+    min-height: 30px;
+    margin: 0 out 10px;
+    line-height: 25px;
+    font-size: 14px;
+    color: white;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+.line::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 25px;
+    top: 0;
+    z-index: -2;
+     background: rgb(231,231,231);
+}
+.line::after{
+    content: "";
+    background: rgb(234,81,61);
+    height: 25px;
+    transition: 0.8s;
+    display: block;
+    width: 100%;
+    animation: animate 1 4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1 ;
+}
+.line1::after{
+    max-width: 90%;
+}
+.line2::after{
+  max-width: 80%;
+}
+.line3::after{
+    max-width: 70%;
+}
+.line4::after{
+    max-width: 80%;
+}
+
+/* map */
+.map{
+    width: 100%;
+    margin: 40px 0;
+}
+.map-article{
+    width: 65%;
+    text-align: start;
+}
+
+.map-aside{
+    width: 30%;
+    text-align: start;
+}
+.form{
+    margin: 10px 0;
+    border: 1px solid grey;
+    height: 40px;
+    text-decoration: none;
+}
+.form-a{
+    text-decoration: none;
+    color: grey;
+   margin-left: 10px;
+}
+.msg{
+    height: 100px;
+}
+.form-btm{
+width: 100%;
+}
+
+
+/* Gallery */
+
+/* aside */
+.gallery-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery-head{
+background-color: rgb(234,81,61);
+width: 30%;
+flex-direction: column;
+height: 100vh;
+position: fixed;
+}
+.gallery-header{
+    padding-top: 30px;
+    
+}
+h4{
+    color: white;
+    font-size: 30px;
+}
+.gallery-nav{
+    padding:30px 0;
+}
+.gallery-icon{
+    border: 1px solid white;
+    border-radius:50% ;
+    color: white;
+}
+.gallery-btm{
+    border: 1px solid white;
+        width: 20%;                                                                                                                                                                                                                                                                                      ;
+}
+.btm{
+    text-decoration: none;
+    color: white; 
+}
+/* photo section */
+.photo-section{
+    max-width: 69%;
+    margin-left: 440px;
+}
+.photo-gallery{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 20px;
+   
+}
+.computer{
+    margin-bottom: 150px;
+}
+.photo{
+    width: 100%;
+    border: 5px solid black;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.photo-div{
+    width: 95%;  
+}
