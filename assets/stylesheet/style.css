@@ -336,6 +336,9 @@ width: 100%;
 
 
 /* Gallery */
+.parent{
+    display: flex;
+}
 
 /* aside */
 .gallery-container{
@@ -345,14 +348,13 @@ width: 100%;
 
 .gallery-head{
 background-color: rgb(234,81,61);
-width: 30%;
+max-width: 30%;
 flex-direction: column;
 height: 100vh;
 position: fixed;
 }
 .gallery-header{
-    padding-top: 30px;
-    
+    padding-top: 30px;   
 }
 h5{
     color: white;
@@ -384,26 +386,30 @@ h5{
     color: white; 
 }
 /* photo section */
-.photo-section{
-    max-width: 69%;
-    margin-left: 440px;
+
+h6{
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0;
 }
-.photo-gallery{
+
+.photo-section{
+    width: 65%;
+   margin-left: 450px;
+}
+ .photo-gallery{
     display: inline-flex;
     flex-direction: column;
     margin-top: 20px;
-   
-}
+    margin-left: 20px;
+} 
 .computer{
     margin-bottom: 150px;
+    margin-right: 40px;
 }
 .photo{
     width: 100%;
     border: 3px solid black;
     border-radius: 6px;
     margin: 10px 0;  
-}
-
-.photo-div{
-    width: 90%;
 }
